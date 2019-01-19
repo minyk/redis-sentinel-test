@@ -47,16 +47,13 @@
                 <version>1.0.0-rc2</version>
                 <configuration>
                     <from>
-                        <image>harbor.ajway.kr/middleware/tomcat8:jre8-DEV-1.0</image>
-                        <auth>
-                            <username>harbor.push</username>
-                            <password>dockerpush</password>
-                        </auth>
+                        <image>registry.hub.docker.com/library/openjdk:8u181</image>
                     </from>
                     <to>
-                        <image>harbor.ajway.kr/test/redistest</image>
+                        <image>minyk/redis-sentinel-test</image>
                         <tags>
                             <tag>${version}</tag>
+                            <tag>dev</tag>
                         </tags>
                     </to>
                     <allowInsecureRegistries>true</allowInsecureRegistries>
