@@ -6,4 +6,5 @@ java -Xms${JVM_XMS} -Xmx${JVM_XMX} \
      -s ${SENTINELS} \
      -t 1000 \
      -m mymaster \
-     -p pass
+     -p pass \
+     -l ${LIB}

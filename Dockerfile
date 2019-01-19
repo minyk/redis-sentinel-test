@@ -14,5 +14,6 @@ ENV JVM_XMS "1g"
 ENV JVM_XMX "1g"
 
 ENV SENTINELS "127.0.0.1:6379"
+ENV LIB "jedis"
 
 CMD ["/entrypoint.sh"]
