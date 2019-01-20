@@ -88,3 +88,7 @@ $ java -Xms1g -Xmx1g \
 .17370 [main] INFO  com.github.minyk.redis.sentinel.test.SentinelTest  - SERVER UP, was down for 4009 ms, failed commands: 2
 .................
 ```
+
+# Acknowledgements
+
+This repo is inspired by https://github.com/noise/redis-sentinel-tests
