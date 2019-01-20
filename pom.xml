@@ -8,6 +8,14 @@
     <packaging>jar</packaging>
     <version>0.1</version>
 
+    <properties>
+        <jedis.version>3.0.1</jedis.version>
+        <redisson.version>3.5.5</redisson.version>
+        <slf4j.version>1.7.21</slf4j.version>
+        <log4j2.version>2.11.1</log4j2.version>
+        <commons-logging.version>1.2</commons-logging.version>
+    </properties>
+
     <build>
         <plugins>
            <plugin>
@@ -67,38 +75,14 @@
         <dependency>
           <groupId>redis.clients</groupId>
           <artifactId>jedis</artifactId>
-          <version>3.0.1</version>
+          <version>${jedis.version}</version>
         </dependency>
 
        <dependency>
            <groupId>org.redisson</groupId>
            <artifactId>redisson</artifactId>
-           <version>3.5.5</version>
+           <version>${redisson.version}</version>
        </dependency>
-
-        <dependency>
-            <groupId>org.slf4j</groupId>
-            <artifactId>slf4j-api</artifactId>
-            <version>1.7.2</version>
-        </dependency>
-
-        <dependency>
-            <groupId>commons-lang</groupId>
-            <artifactId>commons-lang</artifactId>
-            <version>2.6</version>
-        </dependency>
-
-        <dependency>
-            <groupId>org.slf4j</groupId>
-            <artifactId>slf4j-log4j12</artifactId>
-            <version>1.7.5</version>
-        </dependency>
-
-        <dependency>
-            <groupId>commons-io</groupId>
-            <artifactId>commons-io</artifactId>
-            <version>2.4</version>
-        </dependency>
 
        <dependency>
            <groupId>commons-cli</groupId>
@@ -106,6 +90,35 @@
            <version>1.4</version>
        </dependency>
 
+       <dependency>
+           <groupId>commons-logging</groupId>
+           <artifactId>commons-logging</artifactId>
+           <version>${commons-logging.version}</version>
+       </dependency>
+
+       <dependency>
+           <groupId>org.slf4j</groupId>
+           <artifactId>slf4j-api</artifactId>
+           <version>${slf4j.version}</version>
+       </dependency>
+
+       <dependency>
+           <groupId>org.apache.logging.log4j</groupId>
+           <artifactId>log4j-api</artifactId>
+           <version>${log4j2.version}</version>
+       </dependency>
+
+       <dependency>
+           <groupId>org.apache.logging.log4j</groupId>
+           <artifactId>log4j-core</artifactId>
+           <version>${log4j2.version}</version>
+       </dependency>
+
+       <dependency>
+           <groupId>org.apache.logging.log4j</groupId>
+           <artifactId>log4j-slf4j-impl</artifactId>
+           <version>${log4j2.version}</version>
+       </dependency>
     </dependencies>
 
 </project>
